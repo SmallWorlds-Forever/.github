@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/.logos/github-banner-photo-style.svg" alt="SmallWorlds Forever" width="800">
+  <img src=".logos/github-banner-photo-style.svg" alt="SmallWorlds Forever" width="800">
 </p>
 
 # SmallWorlds Forever
