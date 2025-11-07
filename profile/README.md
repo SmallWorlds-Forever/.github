@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/.logos/github-banner-photo-style.svg" alt="SmallWorlds Forever" width="800">
+  <img src=".logos/github-banner-photo-style.svg" alt="SmallWorlds Forever" width="800">
 </p>
 
 # SmallWorlds Forever
@@ -10,9 +10,11 @@ This repository contains the source code for the different parts of our applicat
 
 ## Organization Structure
 
-
-
-
+- **[smallworlds-backend](https://github.com/SmallWorlds-Forever/sw-backend)** - Laravel-based backend API server
+- **[smallworlds-client](https://github.com/SmallWorlds-Forever/sw-client)** - Contains the client-side application to run the game (Electron/Vue.js). This is the desktop application that users will install to play the game.
+- **[smallworlds-database](https://github.com/SmallWorlds-Forever/sw-database)** - Contains SQL scripts for database setup and modifications.
+- **[smallworlds-infrastructure](https://github.com/SmallWorlds-Forever/sw-infrastructure)** - Infrastructure as code and deployment configurations
+- **[smallworlds-streaming](https://github.com/SmallWorlds-Forever/sw-streaming)** - Contains the server application (Red5/Java). This handles real-time communication with data streaming and WebSocket connections.
 
 ## Getting Started
 
@@ -24,13 +26,8 @@ cd Backend
 composer install
 cp .env.example .env
 php artisan key:generate
-# Follow additional setup steps in Backend/README.md
+# Follow additional setup steps in sw-backend/README.md
 ```
-## Customization
-
-Before deploying this project, you'll need to customize the user agent strings throughout the codebase. Search for `YOUR_CUSTOM_AGENT` and replace it with your custom application identifier.
-Edit the script `customize-agent.sh` and run it to automatically update all necessary files.
-
 
 ## Contributing
 We welcome contributions from the community! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) file for guidelines on how to contribute to the project.
